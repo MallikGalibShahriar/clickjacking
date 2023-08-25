@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickjacking Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tooltip-container">
+    <div class="tooltip" id="tooltip">
+      <span class="tooltip-text"><p>
+      <b>Clickjacking</b> is a type of cyber attack where a malicious website or element tricks you into clicking on something different from what you actually see. It's like someone hiding a button behind a picture and when you try to click on the picture, you're actually clicking the hidden button.
+    </p>
+    <p>
+      This can be used to make you unintentionally perform actions like sharing sensitive information, liking a post, or even giving access to your device. It's important to be cautious and only click on things from sources you trust.
+    </p></span>
+    </div>
+  </div>
+
+  <div id="legitimatePage">
+    <h1>actually you're in trap ☠</h1>
+    <button id="legitButton">😈 Dangerous Button</button>
+  </div>
+
+  <div id="maliciousPage">
+    <h1>Alert! 18+ Only! </h1>
+    <p><i>Click to Full View the picture:</i> 🔞</p>
+    <button id="maliciousButton">Here will be shown you an attractive photo</button>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
